@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <RunSettingsFilePath>C:\Users\USER\Documents\Ejercicios programación\.Net\Bloques Palntillas\Hexagonal Web Api\PruebaTecnicaCamiloCadavid\PruebaTecnicaCamiloCadavid.ApiTests\bin\Debug\net8.0\fine-code-coverage\coverage-tool-output\PruebaTecnicaCamiloCadavid.ApiTests-fcc-mscodecoverage-generated.runsettings</RunSettingsFilePath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="6.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="xunit" Version="2.5.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3" />
+	<PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DataBuilderApi\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PruebaTecnicaCamiloCadavid.Api\PruebaTecnicaCamiloCadavid.Api.csproj" />
+  </ItemGroup>
+
+</Project>
